@@ -1,0 +1,102 @@
+
+body{
+    background: url(City\ Background.png) 0 0 repeat-x;
+    background-color: rgb(6, 8, 14);
+    background-size: 1120px 100vh;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    animation: side 10s linear infinite;
+}
+.floor{
+    background: url(City\ Foreground.png) 0 0 repeat-x;
+    background-size: 1120px 100vh;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    animation: fast 5s linear infinite;
+}
+.moon{
+    background: url(http://s3.amazonaws.com/build-mx/wp-content/uploads/2017/06/09144359/Moon-Express-Moon-1.png);
+    background-size: 200px 20vh;
+    height: 20vh;
+    width: 14vw;
+    overflow: hidden;
+}
+
+
+
+.barbarian {
+    position: absolute;
+    top:0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    /* use the timing function steps() to chunk the animation into 12 equal pieces */
+    background: url(run.png) 0 0 no-repeat; 
+    height: 801px;
+    width: 1201px;
+    overflow: hidden;
+    animation: walk 500ms steps(3) 1, walkb 500ms steps(3) 1 500ms, walkc 500ms steps(3) 1 1s, walkd 500ms steps(3) infinite 1.5s;
+  }
+
+  @keyframes walk {
+      from {
+          background-position:  0 0;
+      }
+      to {
+         background-position:  0 -2403px;
+      }
+    }
+    
+  @keyframes walkb {
+    from {
+        background-position:  -1201px 0;
+    }
+    to {
+       background-position:  -1201px -2403px;
+    }
+  }
+  @keyframes walkc {
+    from {
+        background-position:  -2402px 0;
+    }
+    to {
+       background-position:  -2402px -2403px;
+    }
+  }
+  @keyframes walkd {
+    from {
+        background-position:  -3603px 0;
+    }
+    to {
+       background-position:  -3603px -2403px;
+    }
+  }
+    
+
+  
+  @keyframes side {
+    from {
+        background-position: 0 0;
+    }
+    to {
+      background-position: -1120px 0;
+    }
+  }
+  @keyframes fast {
+    from {
+        background-position: 0 0;
+    }
+    to {
+      background-position: -1120px 0;
+    }
+  }
+  
+  
+  /* Don't forget: You'll need an @keyframes block to change the background image's position! */
+  
+  
+  p {text-align: center;}
+
